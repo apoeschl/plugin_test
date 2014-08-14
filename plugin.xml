@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.sdg.BpScanPlugin"
+           id="com.sdg.BbScanPlugin"
       version="1.0.0">
     <name>WebIntent</name>
     <description>Bluebird Scanner Communication for Phonegap</description>
