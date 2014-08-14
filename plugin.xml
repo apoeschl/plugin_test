@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.sdg.BpScanPlugin"
+      version="1.0.0">
+    <name>WebIntent</name>
+    <description>Bluebird Scanner Communication for Phonegap</description>
+    <license>MIT</license>
+    <keywords>cordova,bluebird,scanner</keywords>
+
+    <js-module src="www/bbscanner.js" name="BbScanner">
+        <clobbers target="BbScanner" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BbScanner" >
+                <param name="android-package" value="com.sdg.BbScanPlugin.BbScanner"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/BbScanner.java" target-dir="src/com/sdg/BbScanner" />
+    </platform>
+</plugin>
